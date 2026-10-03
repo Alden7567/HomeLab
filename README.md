@@ -92,15 +92,15 @@ Below is the configuration for SMB:
 
 ## Lessons Learned
 ### Setting up Thinlinc
-* **Problem:** When connecting from outside my home network, the client would result in "Connection timed out" errors. Connecting internally had no issues.
+* **$${\\color{red}Problem:}$$** When connecting from outside my home network, the client would result in "Connection timed out" errors. Connecting internally had no issues.
   
-* **Solution:** Due to my server running on a private network with Network Address Translation (NAT), the issue was related to the `agent_hostname=` parameter on the vsmagent file left blank by default.
+* **$\color{#00FF00}\{Solution:}$** Due to my server running on a private network with Network Address Translation (NAT), the issue was related to the `agent_hostname=` parameter on the vsmagent file left blank by default.
   * Editing the file with **nano** and adding my public IP to `/opt/thinlinc/etc/conf.d/vsmagent.hconf` forces the service to route to the endpoint listening on the forwarded ports.
 
 ### Issues with AMP and Docker
-* **Problem:** During the CLI setup for AMP, Docker was selected to be installed to containerize instances. However, attempting to create new game instances inside Docker containers resulted in "access denied" errors.
+* **$${\\color{red}Problem:}$$** During the CLI setup for AMP, Docker was selected to be installed to containerize instances. However, attempting to create new game instances inside Docker containers resulted in "access denied" errors.
   
-* **Solution:** AMP's built-in system log viewer helped me identify permissions that needed to be changed. The user `amp` needed to be added to the Docker security group using the command `sudo usermod -aG docker amp` to allow administrative controls.
+* **$\color{#00FF00}\{Solution:}$** AMP's built-in system log viewer helped me identify permissions that needed to be changed. The user `amp` needed to be added to the Docker security group using the command `sudo usermod -aG docker amp` to allow administrative controls.
 
 ### Why Plasma KDE VS. XFCE
 The reason for running Plasma KDE environment over XFCE was due to the fact that KDE's native customization options allow me to add resource usage and monitoring widgets to my desktop/taskbar.
