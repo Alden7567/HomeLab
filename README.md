@@ -92,7 +92,7 @@ Below is the configuration for SMB:
 
 ## Lessons Learned
 ### Setting up Thinlinc
-* **$${\\color{red}Problem:}$$** When connecting from outside my home network, the client would result in "Connection timed out" errors. Connecting internally had no issues.
+* **$${\\color{red}Problem:}$$** When connecting from outside my home network, the ThinLinc client would result in "Connection timed out" errors. Connecting internally had no issues.
   
 * **$\color{#00FF00}\{Solution:}$** Due to my server running on a private network with Network Address Translation (NAT), the issue was related to the `agent_hostname=` parameter on the vsmagent file left blank by default.
   * Editing the file with **nano** and adding my public IP to `/opt/thinlinc/etc/conf.d/vsmagent.hconf` forces the service to route to the endpoint listening on the forwarded ports.
