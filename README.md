@@ -25,7 +25,7 @@ Parts selection are a combination of used and donated components. Only storage d
 
 Below is a snippet of the system info:
 
-<img width="694" height="375" alt="neofetch" src="https://github.com/user-attachments/assets/0f4b42f9-c747-4238-abb9-b03f638c32e3" />
+<img width="747" height="487" alt="neo" src="https://github.com/user-attachments/assets/9fa86124-c5cf-4e47-83a7-68db0162e959" />
 
 ## Remote Access 
 [ThinLinc](https://www.cendio.com/) is a free VNC remote access solution that provides a Graphical User Interface (GUI) when connecting remotely via OpenSSH through the Thinlinc Client application. 
@@ -59,16 +59,16 @@ The following port is strictly limited to the LAN using (UFW):
 
 Below is a view of the AMP dashnoard:
 
-<img width="1427" height="830" alt="amp instmgr" src="https://github.com/user-attachments/assets/97ae6dfc-8e70-497e-a0e7-657be14c8921" />
+<img width="1290" height="806" alt="amp" src="https://github.com/user-attachments/assets/406ab272-c53d-4d45-be67-afa8aa46cbdc" />
 
-### <img width="25" height="25" alt="Minecraft_Bedrock_2023" src="https://github.com/user-attachments/assets/7a5e97c9-50a2-415a-9681-ceecc3339a34" /> For Minecraft:
+### <img width="25" height="25" alt="Minecraft_Bedrock_2023" src="https://github.com/user-attachments/assets/a89ea751-d007-45e2-b5f5-12b328450c0e" /> For Minecraft:
 * **Directory Control:** Each server is separated in its own directory with different configurations (Worlds, Survival/Creative mode) running on Java `openjdk 25.0.4.1`.
   
 * **Rapid Scalability:** Within minutes of editing the script, adding a folder, and updating port-forwarding rules allow me to run as many servers with respect to the server's resources. 
 
 Below is a view of multiple Minecraft servers running:
 
-<img width="1889" height="710" alt="servers" src="https://github.com/user-attachments/assets/20742bf7-53f3-4f28-a26e-aeb8a1bdc836" />
+<img width="1997" height="745" alt="servers" src="https://github.com/user-attachments/assets/53df6461-afd6-498a-88cf-751a3f51d097" />
 
 ### One-Click Startup
 To simplify operations, I researched Bash scripting through guides and forums such as Stack Exchange and Stack Overflow. This eliminated repetitive manual typing in the command line (CLI) to relaunch each server during maintainance or server reboots. (ChatGPT) AI was barely starting to release to the public which helped me polish my script.
@@ -88,7 +88,7 @@ With one click of a desktop shortcut the script `launch_servers.sh` sequence han
 
 Below is the configuration for SMB:
 
-<img width="1333" height="697" alt="SMB" src="https://github.com/user-attachments/assets/cfdd7008-8f3e-4f7a-800a-98e9b3abbfaa" />
+<img width="918" height="555" alt="smb" src="https://github.com/user-attachments/assets/73852813-9388-4ab2-81db-28369481debf" />
 
 ## Lessons Learned
 ### Setting up Thinlinc
@@ -107,7 +107,7 @@ The reason for running Plasma KDE environment over XFCE was due to the fact that
 
 Below is a view of widgets in use:
 
-<img width="558" height="323" alt="image" src="https://github.com/user-attachments/assets/4d901e9a-b789-4a12-9aad-385c7771ac38" />
+<img width="345" height="305" alt="widgets" src="https://github.com/user-attachments/assets/784010ce-8b9a-41a4-8f2e-352e6191fec6" />
 
 ## Future Improvements
 * **Distro Switch:** Eventually, I would like to transition to *Ubuntu *Server, but I find using the desktop environment/CLI combo has been more efficient thus far.
