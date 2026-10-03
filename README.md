@@ -11,12 +11,13 @@ This server acts as a multi-purpose machine offering game server hosting, remote
 - [Game Hosting & Automation](#game-hosting--automation)
 - [Backup & Recovery](#backup--recovery)
 - [Lessons Learned](#lessons-learned)
+  
 - [Future Improvements](#future-improvements)
   
 ##  Operating System & Specs
 
 * **Operating System:** Linux Mint
-*  * **CPU:** Intel i7-9700f
+   * **CPU:** Intel i7-9700f
    * **RAM:** 32GB DDR4
    * **STORAGE:** 500gb SSD, 2TB HDD
 
@@ -80,7 +81,9 @@ With one click of a desktop shortcut the script `launch_servers.sh` sequence han
 
 ## Backup & Recovery
 * **Snapshots:** Linux Mint's native backup application **TImeShift** takes monthly incremental snapshots of the OS for system file protection from bad updates and crashes.
+  
 * **Backup Plugin:** Using server plugins, Minecraft servers are automatically backed up every 30 minutes with a limit of 5 backups per server and stored on a hard drive.
+  
 * **Redundancy:** Backups are accessible through SMB share allowing me to store copies to multiple locations, ensuring fast availability and recovery.
 
 Below is the configuration for SMB:
@@ -90,11 +93,13 @@ Below is the configuration for SMB:
 ## Lessons Learned
 ### Setting up Thinlinc
 * **Problem:** When connecting from outside my home network, the client would result in "Connection timed out" errors. Connecting internally had no issues.
+  
 * **Solution:** Due to my server running on a private network with Network Address Translation (NAT), the issue was related to the `agent_hostname=` parameter on the vsmagent file left blank by default.
-* * Editing the file with **nano** and adding my public IP to `/opt/thinlinc/etc/conf.d/vsmagent.hconf` forces the service to route to the endpoint listening on the forwarded ports.
+  * Editing the file with **nano** and adding my public IP to `/opt/thinlinc/etc/conf.d/vsmagent.hconf` forces the service to route to the endpoint listening on the forwarded ports.
 
 ### Issues with AMP and Docker
 * **Problem:** During the CLI setup for AMP, Docker was selected to be installed to containerize instances. However, attempting to create new game instances inside Docker containers resulted in "access denied" errors.
+  
 * **Solution:** AMP's built-in system log viewer helped me identify permissions that needed to be changed. The user `amp` needed to be added to the Docker security group using the command `sudo usermod -aG docker amp` to allow administrative controls.
 
 ### Why Plasma KDE VS. XFCE
@@ -106,4 +111,5 @@ Below is a view of widgets in use:
 
 ## Future Improvements
 * **Distro Switch:** Eventually, I would like to transition to *Ubuntu *Server, but I find using the desktop environment/CLI combo has been more efficient thus far.
+  
 *  **RAID:** In the future, I want to have a RAID 5 array for more storage and data protection. Due to AI demand, HDD prices are very expensive at the moment.
