@@ -1,7 +1,7 @@
 # HomeLab Summary
 This personal project documents the configuration, security policies, and automation script for my centralized Linux home server that I built myself in 2023. 
 
-This server acts as a multi-purpose machine offering game server hosting, remote desktop capabilities, and running automated startup and backups.
+This server acts as a multi-purpose machine offering remote desktop capabilities, game server hosting, and running automated game server startup and backup scripts.
 
 ## Table Of Contents
 - [Operating System & Specs](#operating-system--specs)
