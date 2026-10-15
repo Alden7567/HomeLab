@@ -31,13 +31,15 @@ Below is a snippet of the system info:
 [ThinLinc](https://www.cendio.com/) is a free VNC remote access solution that provides a Graphical User Interface (GUI) when connecting remotely via OpenSSH through the Thinlinc Client application. 
 This software fit my requirements to have full control of my desktop interface. I can access my server within my Local Area Network (LAN) or securely outside of my network.
 
+* **Connectivity:** I enforced cryptographic SSH key-pair authentication for secure passwordless connection. 
+  
 ## Security & Hardening
 To ensure system hardening, I took the following steps:
 * **Patch Management:** The Linux OS is updated weekly with the latest security patches.
   
 * **Firewall Hardening:** The Uncomplicated Firewall (UFW) is enabled, blocking all traffic except for explicitly whitelisted ports required for active services.
 
-* **Brute-Force Protection:** Fail2Ban dynamically monitors access logs and automatically blacklists unknown IP addresses attempting brute-force attacks.
+* **Brute-Force Protections:** Aside from key-pair authentication, Fail2Ban software monitors access logs and automatically blacklists failed login attempts from unknown IP addresses.
   
 * **Traffic Encryption:** Because ThinLinc relies on OpenSSH, all client-to-server traffic is natively encrypted through secure SSH tunneling.
   
