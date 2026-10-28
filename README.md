@@ -73,7 +73,7 @@ Below is a view of multiple Minecraft servers running:
 <img width="1997" height="745" alt="servers" src="https://github.com/user-attachments/assets/53df6461-afd6-498a-88cf-751a3f51d097" />
 
 ### One-Click Startup
-To simplify operations, I researched Bash scripting through guides and forums such as Stack Exchange and Stack Overflow. This eliminated repetitive manual typing in the command line (CLI) to relaunch each server during maintainance or server reboots. (ChatGPT) AI was barely starting to release to the public which helped me polish my script.
+To simplify operations, I researched Bash scripting through guides and forums such as Stack Exchange and Stack Overflow. This eliminated repetitive manual typing in the command line (CLI) to relaunch each server during maintenance or server reboots. During this time, (ChatGPT) AI was released to the public which assisted me in polishing my script.
 
 With one click of a desktop shortcut the script `launch_servers.sh` sequence handles:
 1. Opens CLI terminals respective of how many instances will be running.
